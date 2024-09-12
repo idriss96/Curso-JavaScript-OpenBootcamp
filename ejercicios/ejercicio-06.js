@@ -10,13 +10,13 @@
 // escribe tu respuesta acá
 const fizzBuzz = (num) => {
   if (num % 3 === 0 && num % 5 === 0) {
-    console.log('fizzbuzz');
+    return 'fizzbuzz';
   } else if (num % 3 === 0) {
-    console.log('fizz');
+    return 'fizz';
   } else if (num % 5 === 0) {
-    console.log('buzz');
+    return 'buzz';
   } else {
-    console.log(num);
+    return num;
   }
 };
 // código de prueba

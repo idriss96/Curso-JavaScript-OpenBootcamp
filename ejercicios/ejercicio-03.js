@@ -13,22 +13,20 @@
 // escribe la función bmi acá
 const bmi = (peso, altura) => {
   const bmiTotal = peso / (altura ^ 2).toFixed(1);
-  
+
   if (bmiTotal < 18.5) {
-    return console.log('Bajo de peso');
+    return 'Bajo de peso';
   } else if (bmiTotal <= 24.9) {
-    return console.log('Normal');
+    return 'Normal';
   } else if (bmiTotal <= 29.9) {
-    return console.log('Sobrepeso');
+    return 'Sobrepeso';
   } else {
-   return  console.log('Obeso');
+    return 'Obeso';
   }
 };
 
- // código de prueba
- console.log(bmi(65, 1.8)); // "Normal"
- console.log(bmi(78, 1.6)); // "Sobrepeso"
- console.log(bmi(52, 1.75)); //  "Bajo de peso"
- console.log(bmi(135, 1.7)); // "Obeso"
-
-
+// código de prueba
+console.log(bmi(65, 1.8)); // "Normal"
+console.log(bmi(78, 1.6)); // "Sobrepeso"
+console.log(bmi(52, 1.75)); //  "Bajo de peso"
+console.log(bmi(135, 1.7)); // "Obeso"

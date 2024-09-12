@@ -16,7 +16,7 @@ const contarRango = (num1, num2) => {
       total.push(i);
     }
   }
-  return console.log(total.length);
+  return total.length;
 };
 
 // código de prueba
