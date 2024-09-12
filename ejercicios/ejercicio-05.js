@@ -12,23 +12,21 @@
 // escribe tu respuesta acá
 const likes = (num) => {
   if (num <= 999) {
-    return console.log(`${num}`);
-  }else if (num <= 9999) {
-    return console.log(`${num.toString().substring(0,1)}K`);
-  }else if (num <= 99999) {
-    return console.log(`${num.toString().substring(0,2)}K`);
-  }else if (num <= 999999) {
-    return console.log(`${num.toString().substring(0,3)}K`);
-  }else {
-    return console.log(`${num.toString().substring(0,2)}M`);  
+    return `${num}`;
+  } else if (num <= 9999) {
+    return `${num.toString().substring(0, 1)}K`;
+  } else if (num <= 99999) {
+    return `${num.toString().substring(0, 2)}K`;
+  } else if (num <= 999999) {
+    return `${num.toString().substring(0, 3)}K`;
+  } else {
+    return `${num.toString().substring(0, 2)}M`;
   }
-}
+};
 
 // código de prueba
-console.log(likes(983)) // "983"
-console.log(likes(1900)) // "1K"
-console.log(likes(54000)) // "54K"
-console.log(likes(120800)) // "120K"
-console.log(likes(25222444)) // "25M"
-
-
+console.log(likes(983)); // "983"
+console.log(likes(1900)); // "1K"
+console.log(likes(54000)); // "54K"
+console.log(likes(120800)); // "120K"
+console.log(likes(25222444)); // "25M"

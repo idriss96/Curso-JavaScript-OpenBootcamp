@@ -5,14 +5,12 @@
 // escribe tu respuesta acá
 
 const imprimirArreglo = (a, b, c, d) => {
-  return console.log(a + '\n' + b + '\n' + c + '\n' + d);
- };
- 
- // código de prueba
- console.log(imprimirArreglo(1, 'Hola', 2, 'Mundo'));
- // 1
- // Hola
- // 2
- // Mundo
+  return a + '\n' + b + '\n' + c + '\n' + d;
+};
 
-
+// código de prueba
+console.log(imprimirArreglo(1, 'Hola', 2, 'Mundo'));
+// 1
+// Hola
+// 2
+// Mundo
