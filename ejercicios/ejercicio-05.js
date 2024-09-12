@@ -22,7 +22,6 @@ const likes = (num) => {
   }else {
     return console.log(`${num.toString().substring(0,2)}M`);  
   }
-  
 }
 
 // código de prueba
